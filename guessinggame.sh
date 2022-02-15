@@ -4,7 +4,6 @@ function warn {
 echo "guess again."
 }
 
-touch $(eval echo {01..$((1 + $RANDOM % 100))})
 c=$(ls -1 | wc -l)
 echo "Guess: how many files are in the current directory ?"
 
@@ -18,6 +17,4 @@ while true
         warn $i $c
     done
 
-echo "you are right, $c files exist in current directory."
-ls
-rm *[1-9]*
+echo "congratulations, $c files exist in the current directory."
