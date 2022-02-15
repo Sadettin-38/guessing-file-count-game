@@ -14,7 +14,9 @@ while true
         then 
         break
         fi
+        
         warn $i $c
+        
     done
 
 echo "congratulations, $c files exist in the current directory."
